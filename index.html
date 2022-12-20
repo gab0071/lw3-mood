@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- scripts -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="main.js"></script>
+    <title>my dapp</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+        }
+
+        div {
+            width: 20%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            font-size: 22px;
+        }
+
+        input {
+            height: 30px; 
+            border-radius: 20px;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+
+        button {
+            width: 100%;
+            margin: 10px 0px 5px 0px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: pink;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>This is my mood dApp! 😁🤣😐🥰😎</h1>
+        <p>Here we can set or get the mood:</p>
+        <label for="mood"></label> <br />
+        <input type="text" id="mood" placeholder="put your mood here..."/>
+        <button onclick="setMood()">Set Mood</button>
+        <button onclick="getMood()">Get Mood</button>
+        <h3>Note 🚨: click ctrl + shift + i to see the getMood</h3>
+
+    </div>
+</body>
+</html>
